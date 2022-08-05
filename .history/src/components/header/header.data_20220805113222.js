@@ -4,7 +4,7 @@ export default [
       label: 'Inicio',
     },
     {
-        path: 'features',
+        path: 'https://',
         label: 'Funciones',
     },
     {
@@ -12,7 +12,7 @@ export default [
       label: 'Ayuda',
     },
     {
-        path: 'registrar-restaurante',
+        path: 'Registra tu restaurante',
         label: 'Registra tu restaurante',
       },
     {

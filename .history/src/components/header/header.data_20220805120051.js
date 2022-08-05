@@ -18,6 +18,9 @@ export default [
     {
       path: 'https://atumesa.uy/admin/',
       label: 'Acceso Clientes',
+      btnURL: 'https://atumesa.uy/admin/',
+
+
     },
   ];
   

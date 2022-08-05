@@ -5,6 +5,7 @@ import Drawer from 'components/drawer';
 import { DrawerContext } from '../../contexts/drawer/drawer.context';
 import { IoMdClose, IoMdMenu } from 'react-icons/io';
 import { Link } from 'react-scroll';
+import menuItems from './header.data';
 import {
   FaFacebookF,
   FaInstagram,

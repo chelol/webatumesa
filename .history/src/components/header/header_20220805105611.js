@@ -7,6 +7,7 @@ import { DrawerProvider } from 'contexts/drawer/drawer.provider';
 import MobileDrawer from './mobile-drawer';
 import menuItems from './header.data';
 import LogoDark from 'assets/logo-dark.svg';
+import menuItems from './header.data';
 
 
 export default function Header({ className }) {
@@ -18,7 +19,7 @@ export default function Header({ className }) {
 
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (
-            <Link
+              <Link
                 activeClass="active"
                 to={path}
                 spy={true}
@@ -27,10 +28,19 @@ export default function Header({ className }) {
                 duration={500}
                 key={i}
               >
-              {label} 
-              </Link> 
+                {label}
+              </Link>
             ))}
           </Flex>
+
+          
+          <Button
+            className="donate__btn"
+            variant="secondary"
+            aria-label="Acceso Clientes"
+          >
+            Acceso Clientes
+          </Button>
 
           <MobileDrawer />
         </Container>
@@ -38,8 +48,6 @@ export default function Header({ className }) {
     </DrawerProvider>
   );
 }
-
-
 
 const positionAnim = keyframes`
   from {
@@ -53,8 +61,6 @@ const positionAnim = keyframes`
     transition: all 0.4s ease;
   }
 `;
-
-
 
 const styles = {
   header: {

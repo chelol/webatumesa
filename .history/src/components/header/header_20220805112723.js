@@ -18,7 +18,7 @@ export default function Header({ className }) {
 
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (
-            <Link
+              <Link
                 activeClass="active"
                 to={path}
                 spy={true}
@@ -27,19 +27,30 @@ export default function Header({ className }) {
                 duration={500}
                 key={i}
               >
-              {label} 
-              </Link> 
+                {label}
+
+
+       <NavLink exact activeClassName="active" to="/">
+         Home
+       </NavLink>
+       <NavLink activeClassName="active" to="/users">
+         Users
+       </NavLink>
+       <NavLink activeClassName="active" to="/contact">
+         Contact
+       </NavLink>
+
+              </Link>
             ))}
           </Flex>
 
+        
           <MobileDrawer />
         </Container>
       </header>
     </DrawerProvider>
   );
 }
-
-
 
 const positionAnim = keyframes`
   from {
@@ -53,8 +64,6 @@ const positionAnim = keyframes`
     transition: all 0.4s ease;
   }
 `;
-
-
 
 const styles = {
   header: {

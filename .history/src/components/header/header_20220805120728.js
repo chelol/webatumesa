@@ -17,18 +17,18 @@ export default function Header({ className }) {
           <Logo src={LogoDark} />
 
           <Flex as="nav" sx={styles.nav}>
-            {menuItems.map(({ path, label }, i) => (
-            <Link
+            {menuItems.map(({ btnURL, label }, i) => (
+              <Link
                 activeClass="active"
-                to={path}
+                to={btnURL}
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
                 key={i}
               >
-              {label} 
-              </Link> 
+                {label}
+              </Link>
             ))}
           </Flex>
 
@@ -38,8 +38,6 @@ export default function Header({ className }) {
     </DrawerProvider>
   );
 }
-
-
 
 const positionAnim = keyframes`
   from {
@@ -53,8 +51,6 @@ const positionAnim = keyframes`
     transition: all 0.4s ease;
   }
 `;
-
-
 
 const styles = {
   header: {

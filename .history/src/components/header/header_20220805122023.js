@@ -7,7 +7,7 @@ import { DrawerProvider } from 'contexts/drawer/drawer.provider';
 import MobileDrawer from './mobile-drawer';
 import menuItems from './header.data';
 import LogoDark from 'assets/logo-dark.svg';
-
+import Link from 'next/link'; 
 
 export default function Header({ className }) {
   return (
@@ -18,7 +18,7 @@ export default function Header({ className }) {
 
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (
-            <Link
+              <Link
                 activeClass="active"
                 to={path}
                 spy={true}
@@ -27,8 +27,8 @@ export default function Header({ className }) {
                 duration={500}
                 key={i}
               >
-              {label} 
-              </Link> 
+                {label}
+              </Link>
             ))}
           </Flex>
 
@@ -38,8 +38,6 @@ export default function Header({ className }) {
     </DrawerProvider>
   );
 }
-
-
 
 const positionAnim = keyframes`
   from {

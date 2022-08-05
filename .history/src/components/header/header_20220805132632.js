@@ -27,7 +27,7 @@ export default function Header({ className }) {
                 duration={500}
                 key={i}
               >
-              {label} 
+              {label} <a href={props.link} rel="noreferrer" target="_blank">{image}</a>;
               </Link> 
             ))}
           </Flex>

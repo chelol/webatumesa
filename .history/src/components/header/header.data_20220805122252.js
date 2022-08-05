@@ -1,23 +1,24 @@
 export default [
     {
-      path: 'home',
+      path: 'https://atumesa.uy/admin/',
       label: 'Inicio',
     },
     {
-        path: 'features',
+        path: 'https://atumesa.uy/admin/',
         label: 'Funciones',
     },
     {
-      path: 'ayuda',
+      path: 'https://atumesa.uy/admin/',
       label: 'Ayuda',
     },
     {
-        path: 'registrar-restaurante',
+        path: 'https://atumesa.uy/admin/',
         label: 'Registra tu restaurante',
       },
     {
       path: 'https://atumesa.uy/admin/',
       label: 'Acceso Clientes',
+      btnURL: 'https://atumesa.uy/admin/',
     },
   ];
   

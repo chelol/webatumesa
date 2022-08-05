@@ -27,8 +27,8 @@ export default function Header({ className }) {
                 duration={500}
                 key={i}
               >
-              {label} 
-              </Link> 
+              {label}
+              </Link>
             ))}
           </Flex>
 
