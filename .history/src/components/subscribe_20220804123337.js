@@ -1,4 +1,4 @@
-/** @jsx jsx */
+/** @jsxImportSource @emotion/react */
 import { useRef, useState } from 'react';
 import { jsx } from 'theme-ui';
 import { Flex, Button, Input } from 'theme-ui';

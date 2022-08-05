@@ -1,4 +1,4 @@
-/** @jsx jsx */
+/** @jsxImportSource @emotion/react */
 import { jsx, Box, Heading, Text, Button, Link } from 'theme-ui';
 import List from 'components/list';
 import { IoIosArrowForward } from 'react-icons/io';
