@@ -134,7 +134,7 @@ const styles = {
     a: {
       fontSize: '16px',
       fontWeight: '500',
-      color: 'black',
+      color: 'text_white',
       py: '15px',
       cursor: 'pointer',
       borderBottom: '1px solid #e8e5e5',
@@ -146,6 +146,11 @@ const styles = {
         color: 'primary',
       },
     },
+  },
+
+  a: {
+    color: 'black',
+   
   },
 
   menuFooter: {

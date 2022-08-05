@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Container, Flex } from 'theme-ui';
+import { jsx, Container, Flex, Button } from 'theme-ui';
 import { keyframes } from '@emotion/core';
 import { Link } from 'react-scroll';
 import Logo from 'components/logo';
@@ -7,6 +7,7 @@ import { DrawerProvider } from 'contexts/drawer/drawer.provider';
 import MobileDrawer from './mobile-drawer';
 import menuItems from './header.data';
 import LogoDark from 'assets/logo-dark.svg';
+import { jsx, Container } from 'theme-ui';
 
 
 export default function Header({ className }) {
@@ -18,18 +19,19 @@ export default function Header({ className }) {
 
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (
-            <a href={path} passHref={true} style={{ textDecoration: 'none' }}
-            activeClass="active"
+            <Link
+                activeClass="active"
                 to={path}
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
                 key={i}
-
+                btnName={data.btnName}
+                btnURL={data.btnURL}
               >
               {label} 
-              </a> 
+              </Link> 
             ))}
           </Flex>
 
@@ -39,6 +41,8 @@ export default function Header({ className }) {
     </DrawerProvider>
   );
 }
+
+
 
 const positionAnim = keyframes`
   from {

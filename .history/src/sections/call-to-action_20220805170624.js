@@ -6,7 +6,6 @@ import BgShape from 'assets/shape-1.svg';
 import btnShapeTop from 'assets/btn-shape-top.svg';
 import btnShapeBottom from 'assets/btn-shape-bottom.svg';
 
-
 export default function CallToAction() {
   return (
     <div sx={styles.wrapper}>
@@ -16,10 +15,7 @@ export default function CallToAction() {
           ¿Qué estás esperando?
           </Heading>
           <Box sx={styles.btnWrapper}>
-            <Button variant="whiteButton" onClick={(e) => {
-      e.preventDefault();
-      window.location.href='/registrar-restaurante';
-      }}>
+            <Button variant="whiteButton" aria-label="Contact Us">
               Quiero registrar mi restaurante
             </Button>
           </Box>

@@ -8,10 +8,6 @@ export default [
       label: 'Ayuda',
     },
     {
-      path: 'https://atumesa.uy/demo/',
-      label: 'Como funciona',
-    },
-    {
         path: 'registrar-restaurante',
         label: 'Registra tu restaurante',
       },
@@ -19,6 +15,7 @@ export default [
       path: 'https://atumesa.uy/admin/',
       label: 'Acceso Clientes',
     },
-  
+   
+
   ];
   

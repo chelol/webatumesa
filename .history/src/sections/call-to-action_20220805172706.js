@@ -6,6 +6,10 @@ import BgShape from 'assets/shape-1.svg';
 import btnShapeTop from 'assets/btn-shape-top.svg';
 import btnShapeBottom from 'assets/btn-shape-bottom.svg';
 
+function redirect() {
+  let url = "https://atumesa.uy";
+  window.location(url);
+}
 
 export default function CallToAction() {
   return (
@@ -16,10 +20,7 @@ export default function CallToAction() {
           ¿Qué estás esperando?
           </Heading>
           <Box sx={styles.btnWrapper}>
-            <Button variant="whiteButton" onClick={(e) => {
-      e.preventDefault();
-      window.location.href='/registrar-restaurante';
-      }}>
+            <Button variant="whiteButton" onClick="redirect()">
               Quiero registrar mi restaurante
             </Button>
           </Box>

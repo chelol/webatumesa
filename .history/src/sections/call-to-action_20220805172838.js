@@ -16,10 +16,7 @@ export default function CallToAction() {
           ¿Qué estás esperando?
           </Heading>
           <Box sx={styles.btnWrapper}>
-            <Button variant="whiteButton" onClick={(e) => {
-      e.preventDefault();
-      window.location.href='/registrar-restaurante';
-      }}>
+            <Button variant="whiteButton">
               Quiero registrar mi restaurante
             </Button>
           </Box>

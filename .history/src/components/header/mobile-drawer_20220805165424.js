@@ -134,7 +134,7 @@ const styles = {
     a: {
       fontSize: '16px',
       fontWeight: '500',
-      color: 'black',
+      color: 'text_white',
       py: '15px',
       cursor: 'pointer',
       borderBottom: '1px solid #e8e5e5',
@@ -148,6 +148,8 @@ const styles = {
     },
   },
 
+
+
   menuFooter: {
     width: '100%',
     display: 'flex',
@@ -155,6 +157,7 @@ const styles = {
     alignItems: 'center',
     mt: 'auto',
     color: 'primary',
+    
   },
 
   social: {

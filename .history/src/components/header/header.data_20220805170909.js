@@ -9,7 +9,7 @@ export default [
     },
     {
       path: 'https://atumesa.uy/demo/',
-      label: 'Como funciona',
+      label: 'Como funciona? Ver la demo',
     },
     {
         path: 'registrar-restaurante',

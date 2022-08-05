@@ -18,7 +18,7 @@ export default function Header({ className }) {
 
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (
-            <a href={path} passHref={true} style={{ textDecoration: 'none' }}
+            <Link href={path} passHref={true} style={{ textDecoration: 'none' }}
             activeClass="active"
                 to={path}
                 spy={true}
@@ -29,7 +29,7 @@ export default function Header({ className }) {
 
               >
               {label} 
-              </a> 
+              </Link> 
             ))}
           </Flex>
 

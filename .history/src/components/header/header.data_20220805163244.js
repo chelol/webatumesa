@@ -4,12 +4,12 @@ export default [
       label: 'Inicio',
     },
     {
-      path: 'ayuda',
-      label: 'Ayuda',
+        path: 'Features',
+        label: 'Funciones',
     },
     {
-      path: 'https://atumesa.uy/demo/',
-      label: 'Como funciona',
+      path: 'ayuda',
+      label: 'Ayuda',
     },
     {
         path: 'registrar-restaurante',
@@ -19,6 +19,7 @@ export default [
       path: 'https://atumesa.uy/admin/',
       label: 'Acceso Clientes',
     },
-  
+   
+
   ];
   

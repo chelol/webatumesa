@@ -1,15 +1,15 @@
 export default [
     {
-      path: '/',
+      path: 'home',
       label: 'Inicio',
+    },
+    {
+        path: 'features',
+        label: 'Funciones',
     },
     {
       path: 'ayuda',
       label: 'Ayuda',
-    },
-    {
-      path: 'https://atumesa.uy/demo/',
-      label: 'Como funciona',
     },
     {
         path: 'registrar-restaurante',
@@ -19,6 +19,16 @@ export default [
       path: 'https://atumesa.uy/admin/',
       label: 'Acceso Clientes',
     },
-  
+    {
+    title: 'Demo',
+    btnName: 'Te gustaría ver como funciona? Visitá la demo!',
+    btnURL: 'https://atumesa.uy/demo/',
+    },
+
+
+
+    
+
+
   ];
   

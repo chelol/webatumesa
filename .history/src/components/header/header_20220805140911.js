@@ -18,18 +18,19 @@ export default function Header({ className }) {
 
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (
-            <a href={path} passHref={true} style={{ textDecoration: 'none' }}
-            activeClass="active"
+            <Link
+                activeClass="active"
                 to={path}
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
                 key={i}
-
+                btnName={data.btnName}
+                btnURL={data.btnURL}
               >
               {label} 
-              </a> 
+              </Link> 
             ))}
           </Flex>
 
@@ -39,6 +40,9 @@ export default function Header({ className }) {
     </DrawerProvider>
   );
 }
+
+const data = {
+};
 
 const positionAnim = keyframes`
   from {

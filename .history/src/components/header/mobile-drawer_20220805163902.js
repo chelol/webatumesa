@@ -56,7 +56,7 @@ const MobileDrawer = () => {
         <Box sx={styles.content}>
           <Box sx={styles.menu}>
             {menuItems.map(({ path, label }, i) => (
-               <a href={path} passHref={true} style={{ textDecoration: 'none' }}
+               <a href={path} passHref={true} 
                 activeClass="active"
                 to={path}
                 spy={true}
@@ -134,7 +134,7 @@ const styles = {
     a: {
       fontSize: '16px',
       fontWeight: '500',
-      color: 'black',
+      color: 'text_white',
       py: '15px',
       cursor: 'pointer',
       borderBottom: '1px solid #e8e5e5',
@@ -154,7 +154,10 @@ const styles = {
     flexDirection: 'column',
     alignItems: 'center',
     mt: 'auto',
-    color: 'primary',
+    color: '#000000',
+    '&.active': {
+      color: 'primary',
+    },
   },
 
   social: {
