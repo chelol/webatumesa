@@ -5,11 +5,11 @@ export default [
     header: '',
     items: [
       {
-        path: 'https://atumesa.uy/terminos-condiciones',
+        path: '/',
         label: 'Terminos y condiciones',
       },
       {
-        path: 'https://atumesa.uy/politica-privacidad',
+        path: '/',
         label: 'Politica de privacidad',
       },
       {

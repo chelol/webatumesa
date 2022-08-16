@@ -6,7 +6,6 @@ import BgShape from 'assets/shape-1.svg';
 import btnShapeTop from 'assets/btn-shape-top.svg';
 import btnShapeBottom from 'assets/btn-shape-bottom.svg';
 
-
 const styles = {
   wrapper: {
     position: 'relative',

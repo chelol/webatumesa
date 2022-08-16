@@ -4,6 +4,10 @@ export default [
       label: 'Inicio',
     },
     {
+      path: 'ayuda',
+      label: 'Ayuda',
+    },
+    {
       path: 'https://atumesa.uy/demo/',
       label: 'Como funciona',
     },

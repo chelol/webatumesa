@@ -7,6 +7,11 @@ import btnShapeTop from 'assets/btn-shape-top.svg';
 import btnShapeBottom from 'assets/btn-shape-bottom.svg';
 
 
+export default function CallToAction() {
+  
+  
+}
+
 const styles = {
   wrapper: {
     position: 'relative',

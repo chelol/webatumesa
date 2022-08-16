@@ -7,6 +7,28 @@ import btnShapeTop from 'assets/btn-shape-top.svg';
 import btnShapeBottom from 'assets/btn-shape-bottom.svg';
 
 
+export default function CallToAction() {
+  return (
+    <div sx={styles.wrapper}>
+      <Container sx={styles.container}>
+        <Box sx={styles.contentBox}>
+          <Heading sx={styles.heading}>
+          ¿Qué estás esperando?
+          </Heading>
+          <Box sx={styles.btnWrapper}>
+            <Button variant="whiteButton" onClick={(e) => {
+      e.preventDefault();
+      window.location.href='/registrar';
+      }}>
+              Quiero registrar mi restaurante
+            </Button>
+          </Box>
+        </Box>
+      </Container>
+    </div>
+  );
+}
+
 const styles = {
   wrapper: {
     position: 'relative',

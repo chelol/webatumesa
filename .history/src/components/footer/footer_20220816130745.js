@@ -5,10 +5,11 @@ import Logo from 'components/logo';
 import menuItems from './footer.data';
 
 import FooterLogo from 'assets/footer-logo.svg';
+import CallToAction from 'sections/call-to-action';
 export default function Footer() {
   return (
     <footer sx={styles.footer}>
-      
+      <CallToAction />
       <Container sx={styles.footer.container}>
         <Box sx={styles.footer.footerTopArea}>
           <Box sx={styles.copyrightArea}>

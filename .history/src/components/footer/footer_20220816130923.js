@@ -8,7 +8,7 @@ import FooterLogo from 'assets/footer-logo.svg';
 export default function Footer() {
   return (
     <footer sx={styles.footer}>
-      
+      <CallToAction />
       <Container sx={styles.footer.container}>
         <Box sx={styles.footer.footerTopArea}>
           <Box sx={styles.copyrightArea}>

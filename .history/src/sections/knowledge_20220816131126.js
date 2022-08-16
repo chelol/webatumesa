@@ -6,10 +6,10 @@ import Image from 'components/image';
 import KnowledgeThumb from 'assets/images/knowledge-thumb.png';
 
 const data = {
-  title: 'Ofrece varias opciones, Takeaway, Delivery, Reservar mesa,',
+  title: 'Ofrece varias opciones, Takeaway, Delivery, Reservar mesa, o Pedir desde la mesa',
   description:
     'Tus clientes pueden consultar tu carta cómodamente desde su casa o desde tu local, pueden realizar pedidos para delivery, para retirar en el local, asi como tambien reservar mesa o pedir desde la misma',
-  btnName: 'Registrá tu restaurante',
+  btnName: 'Registra tu restaurante',
   btnURL: 'https://wa.me/%2B59898637404?text=Hola%2C%20me%20gustar%C3%ADa%20registrar%20mi%20restaurante.',
 };
 

@@ -64,7 +64,7 @@ export default function Banner() {
   
   onClick={(e) => {
     e.preventDefault();
-    window.location.href='/registrar';
+    window.location.href='https://wa.me/%2B59898637404?text=Hola%2C%20me%20gustar%C3%ADa%20registrar%20mi%20restaurante.';
     }}
   >
   Registrá tu restaurante
