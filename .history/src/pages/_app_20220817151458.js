@@ -11,7 +11,7 @@ import 'rc-drawer/assets/index.css';
 
 export default function CustomApp({ Component, pageProps }) {
   useEffect(() => {
-    Router.events.on('routeChangeComplete');
+    Router.events.on('routeChangeComplete', logPageView);
   }, []);
 
   return <Component {...pageProps} />;

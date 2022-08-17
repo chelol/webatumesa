@@ -43,7 +43,14 @@ export default function SEO({
   ].concat(meta);
   return (
     <Head>
-      
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-106H92BW7S"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-106H92BW7S');
+</script>
       <title>{title}</title>
       {metaData.map(({ name, content }, i) => (
         <meta key={i} name={name} content={content} />

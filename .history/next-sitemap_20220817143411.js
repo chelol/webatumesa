@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: 'https://web.atumesa.uy',
+  siteUrl: 'https://startup-agency-creative.vercel.app',
   generateRobotsTxt: true,
   // optional
   // robotsTxtOptions: {
